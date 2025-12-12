@@ -11,7 +11,7 @@ PowerPulse is an end-to-end data engineering and analytics solution designed to 
 PowerPulse combines data from the U.S. Energy Information Administration (EIA) and the California ISO (CAISO) to deliver insights into electricity consumption, generation, forecasting accuracy, regional performance, and hourly demand patterns.
 The system uses a modern data stack—Apache Airflow, Snowflake, dbt, and Power BI—to automate pipelines, manage transformations, and deliver business-ready analytics.
 
-📊 Key Features
+## Key Features
 
 Automated ETL/ELT workflows using Airflow
 
@@ -27,7 +27,7 @@ Interactive Power BI dashboards showing trends, regional behavior, KPIs, and hea
 
 Scalable and reproducible architecture suitable for production deployment
 
-🗄️ Data Sources
+## Data Sources
 1. EIA Historical Data
 
 Source: U.S. Energy Information Administration (EIA-930)
@@ -40,21 +40,9 @@ Geography: State & regional balancing authorities
 
 Coverage: Multi-year (historical trends)
 
-2. CAISO Real-Time Data
 
-Source: CAISO “Today’s Outlook” API
 
-Update Frequency: Every 5–10 minutes
-
-Metrics: Load, renewable generation, imports/exports
-
-Format: XML/JSON feeds
-
-Coverage: California grid operations
-
-Combined, these sources produce 8M+ hourly records across 50+ data series.
-
-🔧 Architecture
+## Architecture
 Orchestration – Apache Airflow
 
 Schedules ETL & ELT pipelines
@@ -101,7 +89,7 @@ Weekday vs. weekend behavior
 
 Heat maps & summary matrices
 
-🧱 Database Schema (Star Model)
+## Database Schema (Star Model)
 
 Dimensions:
 
@@ -123,7 +111,7 @@ FactWeekdayWeekend
 
 This structure supports flexible slicing by date, region, and metric type.
 
-📈 Dashboard Insights
+## Dashboard Insights
 
 Power BI dashboards include:
 
@@ -139,17 +127,7 @@ Weekday/weekend summary matrix
 
 Hourly heatmap for load patterns
 
-📂 Repository Structure
-PowerPulse/
-│── airflow/               # DAG scripts for ETL/ELT
-│── dbt/                   # dbt models, tests, snapshots
-│── sql/                   # Additional SQL scripts
-│── notebooks/             # Exploration & validation notebooks
-│── dashboards/            # Power BI files
-│── docs/                  # Documentation, diagrams, reports
-│── README.md              # Project overview
-
-🛠️ Tech Stack
+## Tech Stack
 
 Apache Airflow
 
@@ -163,7 +141,7 @@ Python
 
 REST APIs (EIA, CAISO)
 
-📌 Use Cases
+## Use Cases
 
 Grid demand forecasting
 
@@ -177,7 +155,7 @@ Anomaly detection in demand patterns
 
 Real-time situational awareness
 
-📬 Contributors
+## Contributors
 
 Group Project 9
 
