@@ -1,12 +1,12 @@
 # PowerPulse
-Real-Time Electricity Demand &amp; Generation Analytics
+Real-Time Electricity Demand & Generation Analytics
 
 PowerPulse
 Real-Time Electricity Demand & Generation Analytics
 
 PowerPulse is an end-to-end data engineering and analytics solution designed to monitor, analyze, and visualize real-time and historical electricity demand and generation across U.S. balancing authorities. The project integrates automated data ingestion, scalable data transformation, cloud warehousing, and interactive dashboarding to support operational intelligence and energy-sector decision-making.
 
-🚀 Project Overview
+## Project Overview
 
 PowerPulse combines data from the U.S. Energy Information Administration (EIA) and the California ISO (CAISO) to deliver insights into electricity consumption, generation, forecasting accuracy, regional performance, and hourly demand patterns.
 The system uses a modern data stack—Apache Airflow, Snowflake, dbt, and Power BI—to automate pipelines, manage transformations, and deliver business-ready analytics.
