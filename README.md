@@ -8,7 +8,7 @@ PowerPulse is an end-to-end data engineering and analytics solution designed to 
 
 ## Project Overview
 
-PowerPulse combines data from the U.S. Energy Information Administration (EIA) and the California ISO (CAISO) to deliver insights into electricity consumption, generation, forecasting accuracy, regional performance, and hourly demand patterns.
+PowerPulse combines data from the U.S. Energy Information Administration (EIA) and the California ISO (  ) to deliver insights into electricity consumption, generation, forecasting accuracy, regional performance, and hourly demand patterns.
 The system uses a modern data stack—Apache Airflow, Snowflake, dbt, and Power BI—to automate pipelines, manage transformations, and deliver business-ready analytics.
 
 ## Key Features
@@ -139,7 +139,7 @@ Power BI / Tableau
 
 Python
 
-REST APIs (EIA, CAISO)
+REST APIs (EIA)
 
 ## Use Cases
 
