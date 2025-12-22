@@ -1,0 +1,18 @@
+
+name: energy_consumption_analytics
+version: '1.0.0'
+config-version: 2
+profile: 'default'
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  energy_consumption_analytics:
+    input:
+      +materialized: view    
+      +schema: staging
+    output:
+      +materialized: table    
+      #+schema: analytics
+
