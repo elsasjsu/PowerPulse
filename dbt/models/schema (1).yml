@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_eia
+    columns:
+      - name: REGION
+        tests: [not_null]
+      - name: DATE
+        tests: [not_null]
+      - name: SERIES
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['D', 'DF', 'NG', 'TI']    # adjust to actual SERIES codes
+      - name: VALUE
+        tests: [not_null]
+
+  - name: moving_avg
+    columns:
+      - name: REGION
+        tests: [not_null]
+      - name: DATE
+        tests: [not_null]
+      - name: SERIES
+        tests: [not_null]
+      - name: VALUE
+        tests: [not_null]
+      - name: value_ma_7
+        tests: [not_null]
+
+  - name: weekday_weekend
+    columns:
+      - name: weekday_weekend
+        tests:
+          - accepted_values:
+              values: ['WEEKDAY', 'WEEKEND']

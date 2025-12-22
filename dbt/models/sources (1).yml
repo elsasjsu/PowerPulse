@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: USER_DB_MONKEY
+    schema: staging
+    description: "Schema which stores staging tables for EIA electricity data"
+    tables:
+      - name: RTO_REGION_HOURLY_STAGING
+        description: "Staging table loaded by ELT from RAW.RTO_REGION_HOURLY"
